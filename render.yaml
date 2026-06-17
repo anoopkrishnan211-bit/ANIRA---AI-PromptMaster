@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ANIRA---AI-PromptMaster
+    runtime: node
+    plan: free
+    region: virginia
+    branch: master
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22
